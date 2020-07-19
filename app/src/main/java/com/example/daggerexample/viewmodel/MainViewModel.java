@@ -12,12 +12,15 @@ import java.util.List;
 
 public class MainViewModel extends ViewModel{
 
+    // Expose Live Data to View
     private MutableLiveData<List<FoodItem>> mutableLiveDataFoodItemList;
     private List<FoodItem> foodItemList;
     private FoodItem mFoodItem;
     private static final String TAG = "MainViewModel";
 
+   
     public MainViewModel() {
+        // Use lazy to initaiate mutableLiveDataFoodItemList
         mutableLiveDataFoodItemList = new MutableLiveData<>();
         init();
     }
