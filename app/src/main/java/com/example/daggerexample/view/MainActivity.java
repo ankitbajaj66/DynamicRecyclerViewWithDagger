@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements FoodItemRecyclerV
     }
 
     private void initViews() {
+        // Ankit: No need to do this
         recyclerView = findViewById(R.id.rv);
         btn = findViewById(R.id.button2);
         btnOrder = findViewById(R.id.btnOrder);
